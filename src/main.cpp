@@ -21,7 +21,7 @@ void setup() {
 void loop() {
     pressureValue = analogRead(A0);
 
-    Serial.print("Pressure Sensor Value: ");
+    Serial.print("Force Pressure Sensor Value: ");
     Serial.println(pressureValue);
 
     delay(500);
