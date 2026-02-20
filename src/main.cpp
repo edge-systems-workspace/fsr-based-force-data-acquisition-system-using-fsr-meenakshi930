@@ -19,19 +19,10 @@ void setup() {
 }
 
 void loop() {
+    pressureValue = analogRead(A0);
 
-    // TODO 5:
-    // Read analog value from FSR
+    Serial.print("Pressure Sensor Value: ");
+    Serial.println(pressureValue);
 
-    // TODO 6:
-    // Print raw ADC value
-
-    // TODO 7:
-    // Apply simple threshold logic (e.g., detect pressure)
-
-    // TODO 8:
-    // Print pressure detection message
-
-    // TODO 9:
-    // Add delay (500ms or 1 second)
+    delay(500);
 }
