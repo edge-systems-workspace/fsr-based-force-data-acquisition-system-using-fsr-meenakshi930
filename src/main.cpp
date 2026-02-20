@@ -12,17 +12,17 @@
 
 #include <Arduino.h>
 
-int pressureValue = 0;
+int pressureVal = 0;
 void setup() {
     Serial.begin(9600);
     pinMode(A0, INPUT);
 }
 
 void loop() {
-    pressureValue = analogRead(A0);
+    pressureVal = analogRead(A0);
 
     Serial.print("Force Pressure Sensor Value: ");
-    Serial.println(pressureValue);
+    Serial.println(pressureVal);
 
     delay(500);
 }
